@@ -1,12 +1,8 @@
 server:
   port: 8888
-  
 spring:
-  profiles:
-    active: native
-  
   cloud:
     config:
       server:
-        native:
-          search-locations: file:///C:/Users/mmillan/Documents/workspace/repo
+        git:
+          uri: https://github.com/millan82/config-properties
